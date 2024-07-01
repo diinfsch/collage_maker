@@ -91,6 +91,9 @@ def main():
     parse.add_argument('-s', '--shuffle', action='store_true', dest='shuffle', help='enable images shuffle')
 
     args = parse.parse_args()
+
+    print("Folder: "+args.folder+",Output:"+args.output+",Width"+args.width+",Height:"+args.init_height+",Shuffle:"+args.shuffle)
+    
     if not args.width or not args.init_height:
         parse.print_help()
         exit(1)
