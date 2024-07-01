@@ -92,7 +92,7 @@ def main():
 
     args = parse.parse_args()
 
-    print("Folder: "+args.folder+",Output:"+args.output+",Width"+args.width+",Height:"+args.init_height+",Shuffle:"+args.shuffle)
+    print("Folder: "+args.folder+",Output:"+args.output)
     
     if not args.width or not args.init_height:
         parse.print_help()
